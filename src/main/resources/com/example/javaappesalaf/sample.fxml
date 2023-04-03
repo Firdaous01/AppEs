@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javaappesalaf.LogIn">
+   <children>
+      <AnchorPane prefHeight="405.0" prefWidth="287.0" style="-fx-background-color: #CDEDFA;">
+         <children>
+            <ImageView fitHeight="287.0" fitWidth="305.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pictures/Esalaf__1_-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="287.0" prefHeight="407.0" prefWidth="314.0">
+         <children>
+            <ImageView fitHeight="155.0" fitWidth="149.0" layoutX="95.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pictures/user-removebg-preview%20(1).png" />
+               </image>
+            </ImageView>
+            <Label layoutX="23.0" layoutY="191.0" text="Username">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="255.0" text="Password">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="button" layoutX="108.0" layoutY="318.0" mnemonicParsing="false" onAction="#userLogIn" prefHeight="25.0" prefWidth="88.0" text="LogIn" />
+            <PasswordField fx:id="password" layoutX="108.0" layoutY="253.0" promptText="Password" />
+            <TextField fx:id="username" layoutX="109.0" layoutY="189.0" promptText="Username" />
+            <Label fx:id="wrongLogIn" layoutX="108.0" layoutY="157.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
